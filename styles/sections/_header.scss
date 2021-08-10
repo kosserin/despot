@@ -248,6 +248,11 @@
         bottom: 3vh;
         left: 3vw;
         z-index: 3;
+        font-size: 1.3rem;
+
+        @include phone{
+            bottom: 40vh;
+        }
 
         @include fold{
             z-index: 3;
@@ -304,4 +309,33 @@ body > object{
         bottom: 0;
         top: auto;
     }
+}
+
+/* up button */
+
+#up{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    padding: 1rem 1.2rem;
+    background: rgba($red,.8);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 15;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    color: $black;
+    box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.15);
+    transition: all 500ms ease;
+}
+
+.show-button.up{
+    opacity: 1 !important;
+    pointer-events: all !important;
+    z-index: 100;
+    transition: all 500ms ease;
 }
