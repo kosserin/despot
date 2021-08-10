@@ -696,8 +696,8 @@ body > object {
 }
 
 #index-main #about .image-container {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("../../assets/about.jpg") no-repeat center;
-  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("../../assets/about.jpg") no-repeat center;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("/despot/assets/about.jpg") no-repeat center;
+  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("/despot/assets/about.jpg") no-repeat center;
   background-size: cover;
   width: 50%;
   height: 400px;
