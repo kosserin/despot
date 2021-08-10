@@ -1,0 +1,24 @@
+/* including components */
+
+    @import './styles/components/colors';
+    @import './styles/components/media-query';
+
+/* including sections */
+
+    @import './styles/sections/footer';
+    @import './styles/sections/header';    
+    @import './styles/sections/main';    
+    @import './styles/sections/about';    
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}

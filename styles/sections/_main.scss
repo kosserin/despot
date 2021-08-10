@@ -1,0 +1,1162 @@
+#index-main{
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+    #about{
+        position: relative;
+        padding: 300px 5vw 100px 5vw;
+        background: $brown;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+
+        @include tablet{
+            padding-top: 150px;
+            flex-direction: column;
+        }
+
+        .image-container{
+            background: linear-gradient(to left, rgba($brown,.1)) ,url('../assets/about.jpg') no-repeat center;
+            background-size: cover;
+            width: 50%;
+            height: 400px;
+
+            @include tablet{
+                order: 2;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            @include phone{
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        .text-container{
+            min-width: 400px;
+            width: 40%;
+            margin-left: 50px;
+            background: rgba($color: #000000, $alpha: .1);
+            padding: 3rem;
+
+            @include mini{
+                width: 80%;
+            }
+
+            @include tablet{
+                order: 1;
+                margin: 0 auto;
+            }
+
+            @include phone{
+                min-width: fit-content;
+                padding: 3rem 1rem;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 2.5rem;
+
+                @include phone{
+                    font-size: 2rem;
+                }
+            }
+
+            p{
+                margin: 20px 0;
+                line-height: 25px;
+
+                @include mini{
+                    font-size: .9rem;
+                }
+
+                @include phone{
+                    font-size: .85rem;
+                }
+
+                span{
+                    font-weight: 500;
+                }
+            }
+
+            .button-container{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                    color: $black;
+                    border-bottom: 2px solid $black;
+                    font-weight: 500;
+
+                    @include phone{
+                        font-size: .9rem;
+                    }
+
+                    i{
+                        margin-left: 5px;
+                        transition: transform 200ms ease;
+                    }
+
+                    &:hover i{
+                        transform: translateX(5px);
+                        transition: transform 200ms ease;
+                    }
+                }
+            }
+        }
+    }
+
+    /* end of about section */
+    /* why-us section */
+
+    #why-us{
+        width: 100vw;
+        background: $brown;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 100px 10vw;
+        grid-column-gap: 20px;
+
+        @include miniLaptop{
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include phone{
+            padding: 100px 5vw;
+        }
+
+        .text-container{
+            min-width: 400px;
+            width: 100%;
+            margin-left: 50px;
+            background: rgba($color: #000000, $alpha: .1);
+            padding: 3rem;
+
+            @include miniLaptop{
+                min-width: fit-content;
+                margin-left: 0;
+            }
+
+            @include phone{
+                padding: 3rem 1rem;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 2.5rem;
+
+                @include phone{
+                    font-size: 2rem;
+                }
+            }
+
+            p{
+                margin: 20px 0;
+                line-height: 25px;
+                width: 95%;
+
+                @include phone{
+                    font-size: .85rem;
+                    width: 100%;
+                }
+
+                span{
+                    font-weight: 500;
+                }
+            }
+
+            .button-container{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+
+        .images-container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            background: rgba($brown,.1);
+            justify-content: center;
+            align-items: flex-start;
+
+            @include miniLaptop{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            img{
+                width: 100%;
+                box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
+            }
+
+            .last-image{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 50%;
+            }
+        }
+    }
+    /* end of why-us section */
+
+
+/* COACHES */
+#coaches{
+    padding: 100px 0;
+    background: $brown;
+    position: relative;
+    width: 100vw;
+
+    @include phone{
+        padding-bottom: 200px;
+    }
+
+    .coaches-container{
+        width: 60vw;
+        margin: 0 auto;
+        box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.08);
+-webkit-box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.08);
+-moz-box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.08);
+border-radius: 40px;
+
+        @include miniLaptop{
+            width: 80vw;
+        }
+
+        @include phone{
+            width: 90vw;
+        }
+
+        .coach{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            position: relative;
+
+            @include phone{
+                grid-template-columns: 1fr;
+            }
+
+            .left-side{
+                padding: 0 2rem;
+                background: rgba($black,.1);
+                order: 2;
+
+                @include tablet{
+                    padding: 0rem 0 0 1rem;
+                }
+                
+                @include phone{
+                    order: 2;
+                    padding-bottom: 1rem;
+                }
+
+                h2{
+                    margin-top: 50px;
+                    font-size: 2rem;
+                    font-weight: 500;
+
+                    @include laptop{
+                        margin-top: 20px;
+                    }
+
+                    @include tablet{
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+
+                    @include phone{
+                        position: absolute;
+                        top: -50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-size: 1.5rem;
+                        margin: 0 auto;
+                        width: 200px;
+                    }
+                }
+    
+                p{
+                    margin-top: 60px;
+                    min-height: 200px;
+                    line-height: 23px;
+                    font-weight: 500;
+                    color: rgb(20, 20, 20);
+
+                    @include laptop{
+                        margin-top: 20px;
+                    }
+
+                    @include mini{
+                        margin-top: 0;
+                    }
+
+                    @include tablet{
+                        font-size: .85rem;
+                        min-height: 150px;
+                        line-height: 20px;
+                    }
+
+                    @include phone{
+                        width: 80%;
+                        margin: 0 auto;
+                        text-align: center;
+                        min-height: 120px;
+                    }
+                }
+
+                h1{
+                    margin-top: 0px;
+
+                    @include tablet{
+                        margin-top: 10px;
+                    }
+
+                    @include phone{
+                        text-align: center;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .small-div{
+                    @include phone{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                small{
+                    display: inline-block;
+                    margin-top: 10px;
+                    color: rgb(34, 34, 34);
+                    
+                    @include tablet{
+                        font-size: .7rem;
+                    }
+
+                    @include phone{
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                }
+
+                button{
+                    position: absolute;
+                    right: 2rem;
+                    bottom: 50px;
+                    border: none;
+                    outline: none;
+                    background: $red;
+                    padding: 1rem 1.1rem;
+                    cursor: pointer;
+                    font-size: 1.3rem;
+
+                    @include mini{
+                        bottom: 0px;
+                    }
+
+                    @include tablet{
+                        font-size: 1rem;
+                        padding: .8rem .9rem;
+                    }
+
+                    @include phone{
+                        bottom: -75px;
+                        padding: 1rem 1.1rem;
+                        font-size: 1.3rem;
+                    }
+                }
+
+                #prevBtn{
+                    background: transparent;
+                    color: $red;
+                    right: 13%;
+
+
+                    @include phone{
+                        right: 40%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                #nextBtn{
+                    color: $brown;
+                    background: $red;
+
+                    @include mini{
+                        right:5%;
+                    }
+
+                    @include phone{
+                        left: auto;
+                        right: 40%;
+                        transform: translateX(50%);
+                    }
+                }
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+/* end of coaches section */
+/* come to our training section */
+
+    #join-us{
+        width: 100vw;
+        margin: 0 auto;
+        min-height: 80vh;
+        background: linear-gradient(to bottom, rgba($black,.6), rgba($black,.6), rgba($black,.6), rgba($black,.6), rgba($black,.6)),url('../assets/field.jpg') no-repeat 0% 30%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 5;
+
+        .text-container{
+            background: rgba($brown,.6);
+            width: 60%;
+            margin: 0 auto;
+            padding: 3rem;
+            text-align: center;
+
+            @include mini{
+                width: 70%;
+            }
+
+            @include phone{
+                width: 80%;
+                padding: 3rem 1rem;
+            }
+
+            @include fold{
+                width: 90%;
+                padding: 1.5rem;
+            }
+
+            h1{
+                font-size: 3rem;
+                color: $black;
+
+                @include laptop{
+                    font-size: 3rem;
+                }
+
+                @include tablet{
+                    font-size: 2.4rem;
+                }
+
+                @include phone{
+                    font-size: 1.5rem;
+                    margin: 0 auto;
+                }
+
+                @include fold{
+                    font-size: 1.4rem;
+                }
+            }
+
+            p{
+                color: $black;
+                margin: 20px auto 30px auto;
+                width: 80%;
+
+                @include phone{
+                    font-size: .85rem;
+                }
+            }
+
+            .button{
+
+                @include fold{
+                    padding-bottom: 20px;
+                }
+                a{            
+                    background: transparent;
+                    color: $black;
+                    padding: .7rem 2rem;
+                    border: 3px solid $black;
+                    transition: all 300ms ease;
+                    text-decoration: none;
+                    font-weight: 600;
+
+                    @include phone{
+                        font-size: .85rem;
+                    }
+        
+                    &:hover{
+                        background: $black;
+                        color: $brown;
+                        transition: all 300ms ease;
+                    }
+
+                    i{
+                        margin-left: 10px;
+                        transition: transform 300ms ease;
+                    }
+
+                    &:hover i{
+                        transform: translateX(5px);
+                        transition: transform 300ms ease;
+                    }
+            }
+            }
+        }
+
+
+    }
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* end of join-us section */
+/* gallery section */
+#gallery-container{
+    width: 100vw;
+    background: $brown;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+
+    h1{
+        padding: 200px 0 50px 0;
+        text-align: center;
+        font-size: 3.5rem;
+
+        @include phone{
+            padding: 100px 0 10px 0;
+            font-size: 2rem;
+        }
+    }
+
+    object{
+        width: 800px;
+        position: absolute;
+        opacity: .1;
+        top: 0;
+        right: -25%;
+        z-index: 0;
+        transform: translateY(-50%);
+
+        @include tablet{
+            width: 500px;
+        }
+
+        @include phone{
+            width: 400px;
+        }
+    }
+}
+.gallery-grid{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas: "a b c d"
+                         "e f g h"
+                         "e i i j"
+                         "k l m n"
+                         "o o p q"
+                         "r s t t";
+
+    .img-div{
+      img{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: .9;
+        object-fit: cover;
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+
+    .a{
+      grid-area: a;
+    }
+
+    .b{
+      grid-area: b;
+    }
+
+    .b{
+      grid-area: b;
+    }
+
+    .c{
+      grid-area: c;
+    }
+
+    .d{
+      grid-area: d;
+    }
+
+    .e{
+      grid-area: e;
+    }
+
+    .f{
+      grid-area: f;
+    }
+
+    .g{
+      grid-area: g;
+    }
+
+    .h{
+      grid-area: h;
+    }
+
+    .i{
+      grid-area: i;
+    }
+
+    .j{
+      grid-area: j;
+    }
+
+    .k{
+      grid-area: k;
+    }
+
+    .l{
+      grid-area: l;
+    }
+
+    .m{
+      grid-area: m;
+    }
+
+    .n{
+      grid-area: n;
+    }
+
+    .o{
+      grid-area: o;
+    }
+
+    .p{
+      grid-area: p;
+    }
+
+    .q{
+      grid-area: q;
+    }
+
+    .r{
+      grid-area: r;
+    }
+
+    .s{
+      grid-area: s;
+    }
+
+    .t{
+      grid-area: t;
+    }
+  }
+
+  #modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($color: #000000, $alpha: .9);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease;
+
+    img{
+      max-width: 80vw;
+      margin: 0 auto;
+      max-height: 90vh;
+      position: absolute;
+      object-fit: cover;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+      @include phone{
+          top: 30%;
+          max-width: 100%;
+      }
+    }
+
+    button{
+      position: absolute;
+      top: 50%;
+      padding: 1.5rem 1.7rem;
+      background: rgba($color: #000000, $alpha: .7);
+      border: none;
+      outline: none;
+      color: $brown;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 1.5rem;
+
+      @include phone{
+        padding: .5rem .7rem;
+        font-size: .8rem;
+        top: 55%;
+      }
+
+      &:hover{
+        background: #000000;
+      }
+    }
+
+    #prev{
+      left: 5vw;
+      background: transparent;
+      border: 2px solid $brown;
+
+      @include phone{
+        left: 2vw;
+      }
+    }
+
+    #next{
+      right: 5vw;
+      background: $red;
+
+      @include phone{
+        right: 2vw;
+      }
+    }
+  }
+
+.show#modal{
+opacity: 1;
+pointer-events: all;
+transition: opacity 500ms ease;
+}
+
+/* end of gallery section */
+/* schedule section */
+
+#schedule{
+
+    background: $brown;
+    padding: 150px 0;
+    margin: 0 auto;
+    position: relative;
+
+    object{
+        position: absolute;
+        opacity: .1;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        transform: translate(-50%,50%);
+
+        @include phone{
+            width: 400px;
+        }
+    }
+
+    h1{
+        margin-bottom: 50px;
+        font-size: 3.5rem;
+        text-align: center;
+
+        @include tablet{
+            font-size: 3rem;
+        }
+
+        @include phone{
+            font-size: 2.5rem;
+        }
+    }
+
+    table{
+
+        margin: 0 auto;
+        border-collapse: collapse;
+        position: relative;
+        z-index: 2;
+        tr{
+
+            th{
+                width: 100px;
+                border: 1px solid $black;
+                background: $black;
+                color: $brown;
+                font-weight: 600;
+                font-size: .9rem;
+
+                @include phone{
+                    font-size: .6rem;
+                }
+
+                @include fold{
+                    font-size: .5rem;
+                    font-weight: 500;
+                }
+            }
+
+            td{
+                border: 1px solid $black;
+                font-size: .9rem;
+                text-align: center;
+                color: $black;
+                @include tablet{
+                    font-size: .6rem;
+                }
+            }
+
+            td:nth-child(1),  td:nth-child(2){
+                
+                @include phone{
+                    font-size: .5rem;
+                }
+            }
+
+            td:first-of-type{
+                font-weight: 500;
+            }
+
+            &:nth-child(even){
+                background: rgba($black,.1);
+            }
+        }
+    }
+}
+
+/* end of schedule section */
+/* contact section */
+
+#contact{
+    background: $brown;
+    padding: 50px 0 450px 0;
+    position: relative;
+    width: 100vw;
+
+    @include tablet{
+        padding-bottom: 700px;
+    }
+    
+    &>h1{
+        font-size: 5rem;
+        color: $black;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include tablet{
+            margin-bottom: 0px;
+        }
+
+        @include phone{
+            font-size: 3rem;
+        }
+    }
+
+    p{
+        margin-bottom: 100px;
+        width: 50%;
+        margin: 0 50% 0 0%;
+        padding-left: 50px;
+        font-weight: 500;
+
+        @include laptop{
+            padding-left: 20px;
+        }
+
+        @include miniLaptop{
+            width: 40%;
+        }
+
+        @include tablet{
+            margin-bottom: 0px;
+            text-align: center;
+            width: 100%;
+            padding: 0 50px;
+        }
+    }
+
+    .contact-container{
+        padding-top: 0px;
+        min-width: 500px;
+        margin-left: 50px;
+        position: relative;
+        z-index: 2;
+
+        @include laptop{
+            margin-left: 20px;
+        }
+
+        @include tablet{
+            text-align: center;
+            margin: 0 auto;
+            min-width: 300px;
+            padding: 30px 0;
+        }
+
+        @include phone{
+            min-width: fit-content;
+        }
+
+        .group{
+
+            display: flex;
+            margin: 15px 0;
+
+            @include tablet{
+                justify-content: center;
+                align-items: center;
+            }
+
+            i{
+                font-size: 1.3rem;
+                margin-right: 5px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $red;
+
+                @include laptop{
+                    font-size: .9rem;
+                }
+
+                @include phone{
+                    font-size: .85rem;
+                }
+            }
+            
+
+            span{
+                margin-right: 5px;
+
+                @include laptop{
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+
+
+    .text-container{
+        color: $brown;
+        width: 100vw;
+        color: $brown;
+        background: $black;
+        position: absolute;
+        bottom: 0;
+        padding: 2rem 7rem 15rem 7rem;
+        left: 0;
+        z-index: 2;
+
+        @include laptop{
+            padding: 7rem 4rem;
+        }
+
+        @include mini{
+            padding: 7rem 2rem;
+        }
+
+        @include tablet{
+            position: static;
+            padding-top: 1rem;
+        }
+
+        h1{
+            font-size: 3rem;
+            width: 60%;
+
+            @include laptop{
+                font-size: 2.5rem;
+                width: 50%;
+            }
+
+            @include mini{
+                width: 40%;
+                font-size: 2rem;
+            }
+
+            @include tablet{
+                width: 100%;
+            }
+        }
+
+        p{
+            width: 40%;
+
+            @include mini{
+                width: 30%;
+                font-size: .9rem;
+            }
+
+            @include tablet{
+                width: 80%;
+                margin-top: 10px;
+            }
+
+            @include phone{
+                font-size: .85rem;
+            }
+        }
+    }
+
+
+    .form-container{
+        position: absolute;
+        right: 50px;
+        padding: 2rem;
+        box-shadow: 4px 3px 12px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 4px 3px 12px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 3px 12px 0px rgba(0,0,0,0.75);
+        top:150px;
+        width: 500px;
+        background: $brown;
+        z-index: 3;
+
+        @include mini{
+            width: 400px;
+        }
+
+        @include tablet{
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            top: 600px;
+            margin: 0 auto;
+        }
+
+        @include fold{
+            top: 730px;
+            width: 90%;
+        }
+
+          form{
+
+            background: $brown;
+
+            .big-group{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+    
+                .group{
+                    display: flex;
+                    width: 100%;
+
+                    @include tablet{
+                        width: 45%;
+                    }
+                }
+    
+                .first{
+                    margin-right: 20px;
+                }
+            }
+    
+            .group{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                
+                label{
+                    font-size: .9rem;
+                    cursor: pointer;
+
+                    @include phone{
+                        font-size: .85rem;
+                    }
+                }
+    
+                input{
+                    height: 30px;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    border-bottom: 2px solid $black;
+                    border-right: 2px solid $black;
+                    font-size: .9rem;
+                    width: 100%;
+
+                    @include phone{
+                        font-size: .85rem;
+                    }
+    
+                    &::placeholder{
+                        color: rgba($black,.7);
+                    }
+                }
+    
+                textarea{
+                    padding: 1rem;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    border: 2px solid $black;
+                    font-size: .9rem;
+
+                    @include phone{
+                        font-size: .85rem;
+                    }
+    
+                    &::placeholder{
+                        color: rgba($black,.7);
+                    }
+                }
+            }
+    
+            .button{
+                display: flex;
+                margin-top: 30px;
+                justify-content: center;
+    
+                input{
+                    background: transparent;
+                    border: black;
+                    border: 2px solid $black;
+                    padding: 1rem 2rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    transition: all 400ms ease;
+                    font-weight: 500;
+
+                    @include phone{
+                        font-size: .85rem;
+                    }
+    
+                    &:hover{
+                        background: $black;
+                        color: $brown;
+                        transition: all 400ms ease;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+/* end of main */
