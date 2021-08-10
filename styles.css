@@ -426,8 +426,8 @@ nav .right-side .nav-links li a:hover {
   right: 0%;
   width: 50vw;
   height: 100vh;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("../assets/header.jpg") no-repeat center;
-  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("../assets/header.jpg") no-repeat center;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("../../assets/header.jpg") no-repeat center;
+  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("../../assets/header.jpg") no-repeat center;
   background-size: cover;
   z-index: 2;
 }
@@ -696,8 +696,8 @@ body > object {
 }
 
 #index-main #about .image-container {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("../assets/about.jpg") no-repeat center;
-  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("../assets/about.jpg") no-repeat center;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("../../assets/about.jpg") no-repeat center;
+  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("../../assets/about.jpg") no-repeat center;
   background-size: cover;
   width: 50%;
   height: 400px;
@@ -1224,8 +1224,8 @@ body > object {
   width: 100vw;
   margin: 0 auto;
   min-height: 80vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../assets/field.jpg") no-repeat 0% 30%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/field.jpg") no-repeat 0% 30%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../assets/field.jpg") no-repeat 0% 30%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/field.jpg") no-repeat 0% 30%;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1792,7 +1792,7 @@ body > object {
   }
 }
 
-#index-main #contact p {
+#index-main #contact > p {
   margin-bottom: 100px;
   width: 50%;
   margin: 0 50% 0 0%;
@@ -1801,19 +1801,19 @@ body > object {
 }
 
 @media screen and (max-width: 1440px) {
-  #index-main #contact p {
+  #index-main #contact > p {
     padding-left: 20px;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  #index-main #contact p {
+  #index-main #contact > p {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #index-main #contact p {
+  #index-main #contact > p {
     margin-bottom: 0px;
     text-align: center;
     width: 100%;
@@ -2367,7 +2367,7 @@ main #how-we-started .container {
 }
 
 main #how-we-started .container .image-container {
-  background: url("../assets/started.jpg") no-repeat center;
+  background: url("../../assets/started.jpg") no-repeat center;
   background-size: cover;
   -webkit-transform: translate(20px);
           transform: translate(20px);
