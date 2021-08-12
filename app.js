@@ -50,7 +50,7 @@ function changeInfo() {
     coachImg.src = coaches[counter].image;
 }
 
-const galleryShow = () =>{
+/* const galleryShow = () =>{
     const images = document.querySelectorAll('.gallery-grid img');
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modalImg');
@@ -91,4 +91,4 @@ nextBtn.addEventListener('click', ()=>{
     modalImg.src = `./assets/${counter}.jpg`;
 })}
 
-galleryShow();
+galleryShow(); */
