@@ -273,6 +273,7 @@ nav .nav-logo {
 
 nav .nav-logo img {
   width: 60px;
+  height: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -970,12 +971,14 @@ body > object {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  height: 100%;
 }
 
 @media screen and (max-width: 1150px) {
   #index-main #why-us .images-container {
     width: 100%;
     margin: 0 auto;
+    height: 50%;
   }
 }
 
@@ -1254,6 +1257,7 @@ body > object {
 
 #index-main #coaches .coaches-container .coach img {
   width: 100%;
+  height: 100%;
 }
 
 #index-main #join-us {

@@ -12,6 +12,7 @@
             margin-left: 3vw;
             img{
                 width: 60px;
+                height: 100%;
 
                 @include phone{
                     width: 50px;
