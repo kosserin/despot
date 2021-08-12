@@ -118,7 +118,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 100px 10vw;
-        grid-column-gap: 20px;
+        grid-column-gap: 50px;
 
         @include miniLaptop{
             grid-template-columns: 1fr;
@@ -127,13 +127,11 @@
         }
 
         @include phone{
-            padding: 100px 5vw;
+            padding: 200px 5vw;
         }
 
         .text-container{
-            min-width: 400px;
             width: 100%;
-            margin-left: 50px;
             background: rgba($color: #000000, $alpha: .1);
             padding: 3rem;
 
@@ -186,11 +184,12 @@
             justify-content: center;
             align-items: flex-start;
             height: 100%;
+            width: 100%;
 
             @include miniLaptop{
                 width: 100%;
                 margin: 0 auto;
-                height: 50%;
+                height: 100%;
             }
 
             img{
@@ -198,6 +197,7 @@
                 box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
                 -webkit-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
                 -moz-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
+                height: 100%;
             }
 
             .last-image{
@@ -206,6 +206,7 @@
                 left: 50%;
                 transform: translate(-50%,-50%);
                 width: 50%;
+                height: 50%;
             }
         }
     }
@@ -704,7 +705,7 @@
       transform: translate(-50%,-50%);
 
       @include phone{
-          top: 30%;
+          top: 50%;
           max-width: 100%;
       }
     }
@@ -716,7 +717,7 @@
       background: rgba($color: #000000, $alpha: .7);
       border: none;
       outline: none;
-      color: $brown;
+      color: $red;
       cursor: pointer;
       border-radius: 50%;
       font-size: 1.5rem;
@@ -735,7 +736,7 @@
     #prev{
       left: 5vw;
       background: transparent;
-      border: 2px solid $brown;
+      border: 2px solid $red;
 
       @include phone{
         left: 2vw;
@@ -745,6 +746,7 @@
     #next{
       right: 5vw;
       background: $red;
+      color: $brown;
 
       @include phone{
         right: 2vw;
