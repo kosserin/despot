@@ -20,10 +20,6 @@ const coaches = [
 ];
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
-const coachName = document.getElementById('coach-heading');
-const coachDesc = document.getElementById('coach-text');
-const coachWork = document.getElementById('coach-small');
-const coachImg = document.getElementById('coach-image');
 let counter = 0;
 changeInfo();
 
@@ -44,6 +40,11 @@ prevBtn.addEventListener('click', ()=>{
 })
 
 function changeInfo() {
+    const coachName = document.getElementById('coach-heading');
+    const coachDesc = document.getElementById('coach-text');
+    const coachWork = document.getElementById('coach-small');
+    const coachImg = document.getElementById('coach-image');
+
     coachName.innerText = coaches[counter].name;
     coachDesc.innerText = coaches[counter].desc;
     coachWork.innerText = coaches[counter].work;

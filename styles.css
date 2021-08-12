@@ -586,12 +586,13 @@ nav .right-side .nav-links li a:hover {
   bottom: 3vh;
   left: 3vw;
   z-index: 3;
-  font-size: 1.3rem;
+  font-size: 2.5rem;
 }
 
 @media screen and (max-width: 600px) {
   #index-header .social-container {
     bottom: 40vh;
+    font-size: 2rem;
   }
 }
 
@@ -605,7 +606,7 @@ nav .right-side .nav-links li a:hover {
 #index-header .social-container a {
   text-decoration: none;
   color: #000000;
-  margin: 0 3px;
+  margin: 0 10px 0 0;
 }
 
 .show {
@@ -669,7 +670,7 @@ body > object {
 }
 
 /* up button */
-#up {
+#slide-up {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
@@ -1929,6 +1930,7 @@ body > object {
 #index-main #contact .contact-container .group a {
   text-decoration: none;
   color: #921010;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1440px) {
@@ -2061,6 +2063,12 @@ body > object {
     width: 90%;
     top: 600px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #index-main #contact .form-container {
+    top: 630px;
   }
 }
 

@@ -250,10 +250,11 @@
         bottom: 3vh;
         left: 3vw;
         z-index: 3;
-        font-size: 1.3rem;
+        font-size: 2.5rem;
 
         @include phone{
             bottom: 40vh;
+            font-size: 2rem;
         }
 
         @include fold{
@@ -264,7 +265,7 @@
         a{
             text-decoration: none;
             color: $black;
-            margin: 0 3px;
+            margin: 0 10px 0 0 ;
         }
     }
 }
@@ -315,7 +316,7 @@ body > object{
 
 /* up button */
 
-#up{
+#slide-up{
     position: fixed;
     bottom: 5vh;
     right: 5vw;

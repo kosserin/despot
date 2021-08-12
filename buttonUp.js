@@ -1,5 +1,5 @@
 const scrollUp = () =>{
-    const button = document.querySelector('#up');
+    const button = document.getElementById('slide-up');
 
     window.addEventListener('scroll', ()=>{
         if (pageYOffset > 1630) {
