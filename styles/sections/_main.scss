@@ -198,6 +198,7 @@
                 -webkit-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
                 -moz-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.75);
                 height: 100%;
+                object-fit: cover;
             }
 
             .last-image{
@@ -410,6 +411,7 @@
             img{
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -736,7 +738,7 @@
     #prev{
       left: 5vw;
       background: transparent;
-      border: 2px solid $red;
+      border: 3px solid $red;
 
       @include phone{
         left: 2vw;

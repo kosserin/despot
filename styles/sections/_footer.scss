@@ -51,6 +51,8 @@ footer{
 
             a img{
                 width: 80px;
+                height: 100%;
+                object-fit: cover;
 
                 @include tablet{
                     width: 60px;

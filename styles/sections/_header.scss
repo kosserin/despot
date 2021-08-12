@@ -13,6 +13,7 @@
             img{
                 width: 60px;
                 height: 100%;
+                object-fit: cover;
 
                 @include phone{
                     width: 50px;

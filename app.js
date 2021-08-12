@@ -1,14 +1,3 @@
-const navSlide = () =>{
-    const nav = document.querySelector('.nav-links');
-    const rightSide = document.querySelector('.right-side');
-    const burger = document.querySelector('.burger');
-    
-    rightSide.addEventListener('click', ()=>{
-        nav.classList.toggle('show');
-        burger.classList.toggle('toggle');
-    })
-}
-
 const coaches = [
     {
         name: 'Мирко Бакић',
@@ -29,23 +18,19 @@ const coaches = [
         image: './assets/coach3.jpg'
     }
 ];
-
-
-const nextBtn = document.querySelector('#nextBtn');
-const prevBtn = document.querySelector('#prevBtn');
-const coachName = document.querySelector('.coach h1');
-const coachDesc = document.querySelector('.coach p');
-const coachWork = document.querySelector('.coach small');
-const coachImg = document.querySelector('.coach img');
-
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+const coachName = document.getElementById('coach-heading');
+const coachDesc = document.getElementById('coach-text');
+const coachWork = document.getElementById('coach-small');
+const coachImg = document.getElementById('coach-image');
 let counter = 0;
-    changeInfo();
+changeInfo();
 
 nextBtn.addEventListener('click', ()=>{
     if(counter>=coaches.length-1){
         counter=-1;
     }
-/*     coachName.style.animation = 'fadeIn 1s ease forwards'; */
     counter++;
     changeInfo();
 })
@@ -54,11 +39,8 @@ prevBtn.addEventListener('click', ()=>{
     if(counter<=0){
         counter=coaches.length;
     }
-
     counter--;
-    
     changeInfo()
-    
 })
 
 function changeInfo() {
@@ -70,10 +52,10 @@ function changeInfo() {
 
 const galleryShow = () =>{
     const images = document.querySelectorAll('.gallery-grid img');
-    const modal = document.querySelector('#modal');
-    const modalImg = document.querySelector('#modalImg');
-    const nextBtn = document.querySelector('#next');
-    const prevBtn = document.querySelector('#prev');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const nextBtn = document.getElementById('next');
+    const prevBtn = document.getElementById('prev');
     let counter = 0;
 
 images.forEach((image,index) => {
@@ -92,12 +74,10 @@ modal.addEventListener('click', (e) =>{
     }
 })
 
-
 prevBtn.addEventListener('click', ()=>{
     counter--;
     if (counter === 0) {
         counter = images.length;
-
     }
     modalImg.src = `./assets/${counter}.jpg`;
 
@@ -107,15 +87,8 @@ nextBtn.addEventListener('click', ()=>{
     counter++;
     if (counter === 21) {
         counter = 1;
-
     }
     modalImg.src = `./assets/${counter}.jpg`;
-
-})
-}
-
-
-
+})}
 
 galleryShow();
-navSlide();
