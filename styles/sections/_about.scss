@@ -53,6 +53,10 @@
             width: 50%;
             transform: translateY(-50%);
 
+            span{
+                font-weight: 500;
+            }
+
             @include mini{
                 top: -250px;
             }

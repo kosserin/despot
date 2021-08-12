@@ -194,14 +194,16 @@
 
         p{
             margin: 30px 0;
-            font-weight: 500;
-            width: 40%;
+            width: 35%;
+            font-size: .9rem;
+            color: rgb(27, 27, 27);
 
             @include mini{
                 text-align: center;
                 margin: 20px auto;
                 width: 60%;
                 font-size: .9rem;
+                color: rgb(51, 51, 51);
             }
 
             @include phone{
@@ -266,6 +268,12 @@
             text-decoration: none;
             color: $black;
             margin: 0 10px 0 0 ;
+            transition: all 300ms ease;
+
+            &:hover{
+                color: $red;
+                transition: all 300ms ease;
+            }
         }
     }
 }
