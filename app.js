@@ -30,10 +30,9 @@ const coaches = [
     }
 ];
 
-const carouselSlide = document.querySelector('.coaches-slide');
+
 const nextBtn = document.querySelector('#nextBtn');
 const prevBtn = document.querySelector('#prevBtn');
-const coach = document.querySelector('.coach');
 const coachName = document.querySelector('.coach h1');
 const coachDesc = document.querySelector('.coach p');
 const coachWork = document.querySelector('.coach small');
@@ -46,10 +45,9 @@ nextBtn.addEventListener('click', ()=>{
     if(counter>=coaches.length-1){
         counter=-1;
     }
-    coachName.style.animation = 'fadeIn 1s ease forwards';
+/*     coachName.style.animation = 'fadeIn 1s ease forwards'; */
     counter++;
     changeInfo();
-    animation()
 })
 
 prevBtn.addEventListener('click', ()=>{
@@ -60,7 +58,6 @@ prevBtn.addEventListener('click', ()=>{
     counter--;
     
     changeInfo()
-    animation()
     
 })
 
@@ -69,34 +66,6 @@ function changeInfo() {
     coachDesc.innerText = coaches[counter].desc;
     coachWork.innerText = coaches[counter].work;
     coachImg.src = coaches[counter].image;
-}
-
-function animation(){
-    if(coachName.style.animation !=''){
-
-        coachName.style.animation='';
-    } else{
-        coachName.style.animation = 'fadeIn 1s ease forwards';
-    }
-    if(coachDesc.style.animation !=''){
-
-        coachDesc.style.animation='';
-    } else{
-        coachDesc.style.animation = 'fadeIn 1s ease forwards';
-    }
-
-    if(coachWork.style.animation !=''){
-
-        coachWork.style.animation='';
-    } else{
-        coachWork.style.animation = 'fadeIn 1s ease forwards';
-    }
-
-/*     if(coachImg.style.animation !=''){
-        coachImg.style.animation='';
-    } else{
-        coachImg.style.animation = 'fadeIn 1s ease forwards';
-    } */
 }
 
 const galleryShow = () =>{

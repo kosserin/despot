@@ -668,7 +668,7 @@ body > object {
   bottom: 5vh;
   right: 5vw;
   padding: 1rem 1.2rem;
-  background: rgba(146, 16, 16, 0.8);
+  background: #d2af6d;
   border: none;
   outline: none;
   cursor: pointer;
@@ -677,9 +677,9 @@ body > object {
   opacity: 0;
   pointer-events: none;
   color: #000000;
-  box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px 1px 13px 0px rgba(124, 69, 69, 0.35);
+  -moz-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.35);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -2211,15 +2211,15 @@ body > object {
 
 /* end of main */
 #about-header {
-  background: #000000;
+  background: #d2af6d;
   width: 100vw;
   min-height: 80vh;
   position: relative;
 }
 
 #about-header .number {
-  color: #d2af6d;
-  border-bottom: 1px solid #d2af6d;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 #about-header .about-header-container {
@@ -2270,7 +2270,7 @@ body > object {
 }
 
 #about-header .about-header-container .text-container {
-  color: #d2af6d;
+  color: #000000;
   position: absolute;
   z-index: 2;
   right: 5%;
@@ -2302,7 +2302,7 @@ body > object {
 
 #about-header .about-header-container .text-container h1 {
   font-size: 4.5rem;
-  color: #921010;
+  color: #000000;
 }
 
 @media screen and (max-width: 1024px) {

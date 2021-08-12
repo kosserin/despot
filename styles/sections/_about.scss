@@ -1,11 +1,11 @@
 #about-header{
-    background: $black;
+    background: $brown;
     width: 100vw;
     min-height: 80vh;
     position: relative;
     .number{
-        color: $brown;
-        border-bottom: 1px solid $brown;
+        color: $black;
+        border-bottom: 1px solid $black;
     }
 
     .about-header-container{
@@ -44,7 +44,7 @@
         }
 
         .text-container{
-            color: $brown;
+            color: $black;
             position: absolute;
             z-index: 2;
             right: 5%;
@@ -68,7 +68,7 @@
 
             h1{
                 font-size: 4.5rem;
-                color: $red;
+                color: $black;
 
                 @include mini{
                     font-size: 3rem;
