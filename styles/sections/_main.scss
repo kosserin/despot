@@ -55,8 +55,12 @@
             }
 
             h1{
-                text-align: center;
                 font-size: 2.5rem;
+                text-align: left;
+
+                @include tablet{
+                    text-align: center;
+                }
 
                 @include phone{
                     font-size: 2rem;
@@ -145,8 +149,12 @@
             }
 
             h1{
-                text-align: center;
+                text-align: left;
                 font-size: 2.5rem;
+
+                @include miniLaptop{
+                    text-align: center;
+                }
 
                 @include phone{
                     font-size: 2rem;

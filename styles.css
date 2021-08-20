@@ -3,7 +3,7 @@
 footer {
   border-top: 2px solid rgba(210, 175, 109, 0.1);
   width: 100vw;
-  padding: 2vw 0 0 0;
+  padding: 4vw 0 0 0;
   background: #000000;
 }
 
@@ -19,7 +19,6 @@ footer .footer-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid rgba(210, 175, 109, 0.1);
   padding-bottom: 20px;
 }
 
@@ -37,7 +36,7 @@ footer .footer-container {
 
 @media screen and (max-width: 600px) {
   footer .footer-container {
-    width: 90vw;
+    width: 60vw;
   }
 }
 
@@ -149,6 +148,7 @@ footer .footer-container .footer-links li a {
   font-size: .9rem;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 600px) {
@@ -167,17 +167,24 @@ footer .footer-second-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 50px 0 0px 0;
+  padding: 100px 0 30px 0;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-second-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer .footer-second-container i {
@@ -195,28 +202,29 @@ footer .footer-second-container i:hover {
 }
 
 footer .footer-second-container .copyright {
-  margin-top: 20px;
-  width: 100vw;
-  background: rgba(210, 175, 109, 0.1);
-  text-align: center;
-  padding: 13px 0;
-  color: rgba(210, 175, 109, 0.5);
+  color: #d2af6d;
   font-size: .9rem;
 }
 
-footer .footer-second-container .copyright p:last-of-type {
-  margin-top: 5px;
+@media screen and (max-width: 768px) {
+  footer .footer-second-container .copyright {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 30px;
+    text-align: center;
+    font-size: .8rem;
+  }
+}
+
+footer .footer-second-container .copyright p:first-of-type {
+  margin-bottom: 5px;
 }
 
 footer .footer-second-container .copyright a {
   text-decoration: none;
-  color: rgba(210, 175, 109, 0.2);
-}
-
-@media screen and (max-width: 600px) {
-  footer .footer-second-container .copyright {
-    font-size: .85rem;
-  }
+  color: #921010;
+  font-weight: 500;
 }
 
 footer > .footer-quote {
@@ -263,7 +271,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 10vh;
+  height: 13vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -275,7 +283,7 @@ nav .nav-logo {
 }
 
 nav .nav-logo img {
-  width: 60px;
+  width: 80px;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -324,7 +332,8 @@ nav .right-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10vh;
+  height: 13vh;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -364,7 +373,7 @@ nav .right-side .burger div {
 }
 
 nav .right-side .nav-links {
-  width: 30vw;
+  width: 50vw;
   height: 90vh;
   position: absolute;
   top: 10vh;
@@ -432,8 +441,9 @@ nav .right-side .nav-links li a:hover {
   right: 0%;
   width: 50vw;
   height: 100vh;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("/despot/assets/header.jpg") no-repeat center;
-  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("/despot/assets/header.jpg") no-repeat center;
+  /*         background: linear-gradient(to left, rgba($brown,.1)),url('/despot/assets/header.jpg') no-repeat center; */
+  background: -webkit-gradient(linear, right top, left top, from(rgba(210, 175, 109, 0.1))), url("../../assets/header.jpg") no-repeat center;
+  background: linear-gradient(to left, rgba(210, 175, 109, 0.1)), url("../../assets/header.jpg") no-repeat center;
   background-size: cover;
   z-index: 2;
 }
@@ -701,7 +711,7 @@ body > object {
   transition: all 500ms ease;
 }
 
-.show-button.up {
+.show-button {
   opacity: 1 !important;
   pointer-events: all !important;
   z-index: 100;
@@ -807,8 +817,14 @@ body > object {
 }
 
 #index-main #about .text-container h1 {
-  text-align: center;
   font-size: 2.5rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  #index-main #about .text-container h1 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -932,8 +948,14 @@ body > object {
 }
 
 #index-main #why-us .text-container h1 {
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  #index-main #why-us .text-container h1 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -2399,6 +2421,7 @@ main #how-we-started .headings {
 @media screen and (max-width: 1024px) {
   main #how-we-started .headings {
     width: 100%;
+    text-align: left;
   }
 }
 
@@ -2468,6 +2491,7 @@ main #how-we-started .container .image-container {
 @media screen and (max-width: 1024px) {
   main #how-we-started .container p {
     font-size: .9rem;
+    text-align: left;
   }
 }
 

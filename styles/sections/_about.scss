@@ -121,6 +121,7 @@ main{
 
             @include mini{
                 width: 100%;
+                text-align: left;
             }
 
             h3{
@@ -175,6 +176,7 @@ main{
 
                 @include mini{
                     font-size: .9rem;
+                    text-align: left;
                 }
             }
         }

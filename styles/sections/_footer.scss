@@ -1,7 +1,7 @@
 footer{
     border-top: 2px solid rgba($brown,.1);
     width: 100vw;
-    padding: 2vw 0 0 0;
+    padding: 4vw 0 0 0;
     background: $black;
     .footer-container{
 
@@ -10,7 +10,6 @@ footer{
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid rgba($brown,.1);
         padding-bottom: 20px;
 
         @include miniLaptop{
@@ -22,7 +21,7 @@ footer{
         }
 
         @include phone{
-            width: 90vw;
+            width: 60vw;
         }
 
         @include phone{
@@ -105,6 +104,7 @@ footer{
                     color: $brown;
                     font-size: .9rem;
                     transition: all 300ms ease;
+                    font-weight: 500;
 
                     @include phone{
                         font-size: .85rem;
@@ -121,10 +121,15 @@ footer{
 
     .footer-second-container{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        flex-direction: column;
-        padding: 50px 0 0px 0;
+        padding: 100px 0 30px 0;
+        width: 80vw;
+        margin: 0 auto;
+
+        @include tablet{
+            flex-direction: column;
+        }
 
         i{
             margin: 0 10px;
@@ -139,25 +144,24 @@ footer{
         }
 
         .copyright{
-            margin-top: 20px;
-            width: 100vw;
-            background: rgba($brown,.1);
-            text-align: center;
-            padding: 13px 0;
-            color: rgba($brown,.5);
+            color: $brown;
             font-size: .9rem;
 
-            p:last-of-type{
-                margin-top: 5px;
+            @include tablet{
+                order: 2;
+                margin-top: 30px;
+                text-align: center;
+                font-size: .8rem;
+            }
+
+            & p:first-of-type{
+                margin-bottom: 5px;
             }
 
             a{
                 text-decoration: none;
-                color: rgba($brown,.2);
-            }
-
-            @include phone{
-                font-size: .85rem;
+                color: $red;
+                font-weight: 500;
             }
         }
     }
